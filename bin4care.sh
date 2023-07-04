@@ -1,6 +1,6 @@
 #!/bin/bash
 export valueID=`/usr/bin/id -u`
-export filterSUID=`/usr/bin/find / -perm -4000 2>/dev/null | /usr/bin/awk -F '/' '{print $NF}' | /usr/bin/tr '\n' '|' | /usr/bin/sed 's/|$//' | /usr/bin/sed 's/\([^|]\+\)/^\1$/g'`
+export filterSUID=`/usr/bin/find / -perm -4000 -user root 2>/dev/null | /usr/bin/awk -F '/' '{print $NF}' | /usr/bin/tr '\n' '|' | /usr/bin/sed 's/|$//' | /usr/bin/sed 's/\([^|]\+\)/^\1$/g'`
 echo " ____  _       _  _    ____
 | __ )(_)_ __ | || |  / ___|__ _ _ __ ___
 |  _ \| | '_ \| || |_| |   / _\` | '__/ _ \\
