@@ -1,6 +1,6 @@
 # Información previa
 
-- Herramienta para saber que binarios tipicos tienes en tu sistema Linux a los cuales debes de tener cuidado a la hora de asignarles permisos privilegiados.
+- Herramienta para saber que binarios o capabilities tipicas tienes en tu sistema Linux para tener cuidado a la hora de asignarles permisos privilegiados.
 - Esta utilidad solo se puede ejecutar desde la propia maquina donde quieras examinar los binarios.
 - La finalidad de esta herramienta es que los administradores tengan mejor control de los tipicos binarios que pocas veces se suele dar importancia, por lo que es recomendable que el script se ejecute como root para tener acceso a los maximos binarios posibles.
 - Si alguien quiere modificar el script a su gusto es totalmente libre.
